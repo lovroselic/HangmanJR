@@ -1,0 +1,102 @@
+h1 {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #AAA;
+}
+
+fieldset {
+    border: 1px ridge #333;
+    border-radius: 5px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+legend {
+    font-size: 16px
+}
+
+.blue {
+    color: blue
+}
+
+.green {
+    color: green
+}
+
+.red {
+    color: red
+}
+
+.yellow {
+    color: #ff0
+}
+
+#buildSentence {
+    letter-spacing: 2px;
+    word-spacing: 20px
+}
+
+input[type=text] {
+    padding: 5px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input[type=button] {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 18px
+}
+
+input:focus {
+    border: 2px solid #000
+}
+
+label {
+    font-size: 24px
+}
+
+#guess {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#start {
+    border-radius: 5px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px
+}
+
+#buildSentence {
+    font-size: 26px
+}
+
+#L1 {
+    font-size: 22px
+}
+
+#forgive {
+    height: 70px;
+    border: 1px ridge #333;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px
+}
+
+#lives {
+    font-family: 'Oxygen', sans-serif !important
+}
+
+#theArticle {
+    margin-right: 8px;
+    font-size: 14px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0
+}

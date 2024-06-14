@@ -1,0 +1,101 @@
+<!-- 
+https://chestbook.si/wp-content/uploads/Games/External
+https://chestbook.si/wp-content/uploads/Games/JS/LIB
+https://chestbook.si/wp-content/uploads/Games/JS
+https://chestbook.si/wp-content/uploads/Games/CSS
+https://chestbook.si/wp-content/uploads/Games/Assets/Images
+
+-->
+
+<!-- External JS -->
+<script src="https://chestbook.si/wp-content/uploads/Games/External/bootstrap.bundle.min.js"></script>
+<script src="https://chestbook.si/wp-content/uploads/Games/External/jquery-3.6.0.min.js"></script>
+
+<!-- JS -->
+<script src="https://chestbook.si/wp-content/uploads/Games/JS/hangman_jr.js"></script>
+
+<!-- BS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- CSS -->
+<link href="https://chestbook.si/wp-content/uploads/Games/CSS/coolstyle.css" rel="stylesheet" type="text/css">
+<link href="https://chestbook.si/wp-content/uploads/Games/CSS/hangman.css" rel="stylesheet" type="text/css">
+
+<!-- HTML CONTENT -->
+<div id="preload" class="hidden"></div>
+<div class="container my-5 p-2 cool_page">
+    <h1>Hangman Junior</h1>
+
+    <p>Hangman JR - is a word guessing game with helpful illustrations. Choose from the selection of themes
+        (animals, food, clothes, ...), guess the word and finally fill in the correct definite or indefinite article
+        (or maybe there is none?) to win the game and save the Hangman.</p>
+
+</div>
+<div class="container my-3 p-3 cool_page">
+    <div class="row">
+        <div class="col-6 px-5">
+            <div class="row my-3 d-flex align-items-stretch">
+                <div class="col-sm-6 d-flex flex-column">
+                    <fieldset class="flex-fill">
+                        <legend>Select theme</legend>
+                        <div class="container d-flex flex-column align-items-center">
+                            <select id="theme" class="mb-5">
+                            </select>
+                            <br />
+                            <button type="button" name="start" id="start" class="btn cool_dark_orange mt-3">Start
+                                Game</button>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-sm-6 d-flex flex-column">
+                    <fieldset id="L2" class="flex-fill">
+                        <legend>Input</legend>
+                        <div class="container d-flex flex-column align-items-center">
+                            <label for="getLetter" style="font-size:20px">Which letter is next?
+                                <br />
+                            </label>
+                            <input type="text" id="getLetter" size="1" maxlength="1" name="getLetter" disabled
+                                style="width:80px" />
+                            <br />
+                            <br />
+                            <button type="button" name="guess" id="guess" class="btn cool_dark_orange mt-3"
+                                disabled>Enter
+                                Letter</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-sm-12">
+                    <div id="forgive">
+                        <p id="lives">Forgiveness: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 px-5 mt-auto">
+            <div id="story" class="float-start ">
+                <img src="https://chestbook.si/wp-content/uploads/Games/Assets/Images/Hangman_JR_title.jpg" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-3 p-3 cool_page">
+    <div id="page">
+        <div class="row">
+            <div class="col-9 p-3">
+                <form action="" id="build">
+                    <p id="buildSentence">...</p>
+                </form>
+                <p id="leftovers">Incorrect letters:</p>
+                <p id="message">Message:</p>
+            </div>
+            <div class="col-3">
+                <div id="the_picture" class="float-end"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END HTML CONTENT -->
